@@ -12,7 +12,7 @@
     :root{
       --bg-dark:#08232b;
       --bg-darker:#061a20;
-      --brand:#B1FF9B;              /* soft lime accent for CTAs */
+      --brand:#B1FF9B;              
       --text:#ffffff;
       --text-dim:rgba(255,255,255,.85);
       --btn-text:#0b1d24;
@@ -32,8 +32,7 @@
       position:absolute; top:0; left:0; right:0;
       display:flex; align-items:center; justify-content:center;
       padding:18px 24px; z-index:20;
-      background:linear-gradient(180deg, rgba(2,28,35,.85) 0%, rgba(3,16,20,0) 100%);
-      backdrop-filter:saturate(120%) blur(0px);
+      background:linear-gradient(180deg, rgba(2,28,35,.7) 0%, rgba(3,16,20,0) 100%);
     }
     .nav-inner{
       width:min(1200px, 92vw);
@@ -63,12 +62,12 @@
     .hero{
       position:relative; min-height:100vh; display:flex; align-items:center;
       background:
-        linear-gradient(180deg, rgba(3,77,99,.66) 0%, rgba(1,15,20,.95) 65%),
+        linear-gradient(180deg, rgba(3,77,99,.45) 0%, rgba(1,15,20,.8) 65%),
         url('revolt_mockup.jpg') center/cover no-repeat fixed;
     }
     .hero::before{
       content:""; position:absolute; inset:0;
-      background:radial-gradient(1200px 600px at 70% 10%, rgba(13,56,66,.3), transparent 60%);
+      background:radial-gradient(1200px 600px at 70% 10%, rgba(13,56,66,.25), transparent 60%);
       pointer-events:none;
     }
     .hero-inner{
@@ -100,15 +99,13 @@
     }
     .logo-watermark img{height:42px; width:auto; display:block;}
 
-    /* FOOTER (minimal to avoid other content) */
     footer{
       text-align:center; padding:28px 16px; color:#a5b7bd; font-size:13px;
       background:linear-gradient(180deg, rgba(1,15,20,.0) 0%, rgba(1,15,20,.6) 100%);
     }
 
-    /* Simple responsive tweaks */
     @media (max-width: 920px){
-      .nav-links{display:none;} /* simple: hide menu on small for now */
+      .nav-links{display:none;}
     }
   </style>
 </head>
@@ -127,7 +124,7 @@
         <a href="#">Learn more</a>
         <a href="#">Company</a>
         <a href="#">Career</a>
-        <a href="#">Contact</a>
+        <a href="https://www.linkedin.com/company/revolt-energy-storage" target="_blank">Contact</a>
         <span class="search-icon" title="Search"></span>
       </nav>
     </div>
@@ -142,10 +139,9 @@
       </p>
       <div class="btns">
         <a class="btn btn-primary" href="#">Our products</a>
-        <a class="btn btn-ghost" href="#">Contact us</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/company/revolt-energy-storage" target="_blank">Contact us</a>
       </div>
 
-      <!-- watermark logo in the corner -->
       <div class="logo-watermark" aria-hidden="true">
         <img src="revolt_logo.png" alt="">
       </div>
